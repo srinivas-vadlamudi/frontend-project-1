@@ -11,7 +11,7 @@
         font-size: 35px;
     }
     .main-head{
-        justify-content: flex-start;
+        justify-content:space-around;
         width: 100%;
     }
     .slide{
@@ -32,6 +32,8 @@
         flex-direction: column;
         gap: 10px;
         padding: 8px;
+        height:fit-content;
+        margin-top: -300px;
     }
     .where-togo>input,select{
         width: 100%;
@@ -70,6 +72,7 @@
         flex-direction: column;
         gap: 30px;
         padding: 15px;
+        height:fit-content;
      }
      .subscribe-container>input{
         width: 90%;
@@ -85,8 +88,8 @@
 
      /* .pics-container 2 */
      .pics-container2{
-        gap: 20px;
-       grid-template-columns: repeat(1,300px);
+        /* gap: 20px; */
+        grid-template-columns: repeat(1,330px);
      }
      .heading>button{
         width: 40%;
