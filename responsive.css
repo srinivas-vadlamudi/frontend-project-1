@@ -4,14 +4,15 @@
     }
     .head{
         justify-content:space-around;
-        width: 50%;
+        width: 100%;
+        /* border: 2px solid; */
     }
     .head>i{
         display: block;
         font-size: 35px;
     }
     .main-head{
-        justify-content:space-around;
+        /* justify-content:space-around; */
         width: 100%;
     }
     .slide{
@@ -117,27 +118,19 @@
       }
 
       /* review slider  */
-      .slide1{
-        width: 200px;
-        font-size: 0.7rem; 
-        padding: 10px;
-      }
-      .slide1>.image{
-        border-radius: 50%;
-        height: 60px;
-        width: 60px;
-      }
+      
 
       /* trips container  */
       .trips-container{
         grid-template-columns: repeat(1,350px);
+        gap: 15px;
       }
       /* footer  */
 
       .footer-div{
         flex-direction: column;
-        width: 100%;
-        margin: 0;
+        width:100%;
+        /* margin: 0; */
         /* gap: 10px; */
         align-items: flex-start;
       }
@@ -148,6 +141,56 @@
         padding: 0;
         background-color: grey;
       }
+      
+      @media screen and (max-width: 600px) {
+        .content-carousel {
+          width: 200px; /* Reduced carousel size */
+          height: 200px;
+        }
+      
+        .slide1 {
+          width: 150px; /* Reduced slide size */
+          height: 160px;
+          
+        }
+      
+        .slide1 img {
+          width: 60px; /* Reduced image size */
+          height: 60px;
+          margin-top: 15px; /* Adjusted margin */
+        }
+      
+        .slide1 p {
+          font-size: 10px; /* Reduced text size */
+          margin: 6px; /* Adjusted margin for spacing */
+        }
+      
+        /* Adjusting translateZ for better visibility on smaller screens */
+        .content-carousel .slide1:nth-child(1) {
+          transform: rotateY(0deg) translateZ(150px);
+        }
+      
+        .content-carousel .slide1:nth-child(2) {
+          transform: rotateY(120deg) translateZ(150px);
+        }
+      
+        .content-carousel .slide1:nth-child(3) {
+          transform: rotateY(240deg) translateZ(150px);
+        }
+      }
+      
 
-
-}
+      .head::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+      }
+    
+    }
+      
