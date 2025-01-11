@@ -6,50 +6,84 @@
 }
 body,html{
   background-color:rgba(6, 3, 6, 0.059);
-  margin: 0;
+}
+.navbar-toggler {
+  border: none;
   padding: 0;
-  height: 100%;
+  outline: none;
+  box-shadow: none;
 }
- .main-head{
-    display: flex;
-    gap:160px;
-    background-color:rgba(245, 245, 245, 0.959);
-    height: 100px;
-    font-size: 1.2rem;
-    top: 0;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    justify-content: space-around;
- }
-.head{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 35px;
-    width: 100%;
+.menu>a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
-.head>img{
-   width: 170px; 
-   color: whitesmoke;
+.bg-body-tertiary>a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
-.head>i{
+.icons>div>i{
+  font-size: 20px;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.animated-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  background: #2d7ef7;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2) {
+  top: 10px;
+}
+
+.animated-icon span:nth-child(3) {
+  top: 20px;
+}
+
+.navbar-toggler[aria-expanded="true"] .animated-icon span:nth-child(1) {
+  top: 11px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .animated-icon span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.navbar-toggler[aria-expanded="true"] .animated-icon span:nth-child(3) {
+  top: 11px;
+  transform: rotate(-135deg);
+}
+.hamburger-menu {
   display: none;
 }
-a{
-    text-decoration: none;
-    color:black;
-}
-.icons{
-    display: flex;
-    gap: 35px;
-    align-items: center;
-    color:black;
-    cursor: pointer;
-    width: 100%;
-}
-.bi-telephone{
-    color:green;
+/* Logo size adjustment */
+.head img {
+  max-width: 150px;
+  height: auto;
 }
 
 /* slider images  */
@@ -266,7 +300,7 @@ a{
 }
 .pics-container2>div{
   margin: 0 auto;
-  height: 340px;
+  height: 350px;
   position: relative;
   background-color: rgba(237, 234, 236, 0.619);
 }
@@ -341,7 +375,7 @@ a{
   left: 50%;
   font-size: 2.5rem;
   color: rgba(53, 40, 83,);
-  /* z-index: 999; */
+
 }
 .bi-play-circle-fill {
   animation: pulse 1.7s infinite;
@@ -452,12 +486,8 @@ a{
   height: fit-content;
   overflow: hidden;
   margin: auto;
-  /* border: 2px solid; */
   border-radius: 5px;
 }
-/* .trips-container>div:hover img {
-  transform: scale(1.1);
-} */
 
 /* footer styles  */
 
