@@ -30,12 +30,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
       <!-- Main Navbar Links (visible above 600px) -->
       <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Destination</a>
-        <a href="#">Pages</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#home">About</a>
+        <a href="#about">Destination</a>
+        <a href="#places">Places</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <!-- Social Icons and Phone (visible above 600px) -->
@@ -50,18 +50,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <!-- Collapsible mobile menu (visible below 600px) -->
     <div class="collapse" id="mobileNav">
       <div class="bg-body-tertiary shadow-3 p-4">
-        <a href="#" class="btn btn-link border-bottom m-0">Home</a>
-        <a href="#" class="btn btn-link border-bottom m-0">About</a>
-        <a href="#" class="btn btn-link border-bottom m-0">Destination</a>
-        <a href="#" class="btn btn-link border-bottom m-0">Pages</a>
-        <a href="#" class="btn btn-link border-bottom m-0">Blog</a>
-        <a href="#" class="btn btn-link m-0">Contact</a>
+        <a href="#home" class="btn btn-link border-bottom m-0">Home</a>
+        <a href="#home" class="btn btn-link border-bottom m-0">About</a>
+        <a href="#about" class="btn btn-link border-bottom m-0">Destination</a>
+        <a href="#places" class="btn btn-link border-bottom m-0">Places</a>
+        <a href="#blog" class="btn btn-link border-bottom m-0">Blog</a>
+        <a href="#contact" class="btn btn-link border-bottom m-0">Contact</a>
       </div>
     </div>
   </div>
 
     <!-- slideshow  -->
-    <div class="slideshow">
+    <div class="slideshow" id="home">
         <div class="slide">
           <img src="./images/kerala.webp" alt="Image 1">
           <div class="text">Kerala</div>
@@ -95,7 +95,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
       <!-- Popular Destination -->
 
-      <div class="heading">
+      <div class="heading" id="about">
           <h1>Popular Destinations</h1>
           <p>Explore the world’s most popular destinations, where breathtaking landscapes and
              <span>vibrant cultures come together to create unforgettable experiences.</span></p>
@@ -121,13 +121,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
         <!-- popular places  -->
 
-       <div class="heading">
+       <div class="heading" id="places">
         <h1>Popular Places</h1>
         <p>Explore the world’s most popular destinations, where breathtaking landscapes and
            <span>vibrant cultures come together to create unforgettable experiences.</span></p>
        </div>
 
-       <div class="pics-container2">
+       <div class="pics-container2" >
         <div><img src="./images/goa.jpeg" alt="hyd-photo">
           <p class="p1">Goa <br><span class="india"> India</span></p>
           <p class="p1"><i class="bi bi-star-fill"></i>
@@ -211,7 +211,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
         </div>
 
 
-  <div class="review-slider">
+  <div class="review-slider" id="blog">
     <div class="content-carousel">
       <div class="slide1">
         <img src="./images/person2.jpeg" alt="Person 2" class="image">
@@ -248,7 +248,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
         <!-- footer  -->
 
-        <div class="footer-div">
+        <div class="footer-div" id="contact">
           <div class="item1 items">
             <img src="./images/nomadic.png" alt="">
             <p>5th flora, 700/D kings road, green <br>lane Hyderabad-1782 <br>+10 367 826 2567 <br>contact@webpage.com </p>
